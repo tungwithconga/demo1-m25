@@ -2,22 +2,26 @@ import React from 'react';
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-white shadow-md">
+    <header className="bg-white shadow-md sticky top-0 z-50">
       {/* Phần trên cùng với số điện thoại hỗ trợ */}
       <div className="flex justify-end py-2 px-4 text-sm text-gray-600">
-        <span>Hỗ trợ khách hàng: <a href="tel:19008079" className="font-bold text-yellow-600">1900 8079</a></span>
+        <span>Hỗ trợ khách hàng: <a href="tel:19008079" className="font-bold text-yellow-600">0969872005</a></span>
       </div>
-      
+
       {/* Phần chính của header: Logo, Navigation, Search, Icons */}
       <div className="flex items-center justify-between px-8 py-4">
-        {/* Logo */}
-        <div className="flex-shrink-0">
-          <img src="https://owen.cdn.vccloud.vn/static/version1724551346/frontend/Owen/owen2021/vi_VN/images/logo.svg" alt="Owen Logo" className="h-10" />
+        {/* Logo (điều chỉnh để sang trái và thêm khoảng cách) */}
+        <div className="flex-shrink-0 mr-8"> {/* Thêm 'mr-8' để tạo khoảng cách giữa logo và navigation */}
+          <img
+            src="https://owen.cdn.vccloud.vn/static/version1724551346/frontend/Owen/owen2021/vi_VN/images/logo.svg"
+            alt="Owen Logo"
+            className="h-10"
+          />
         </div>
 
         {/* Navigation Links */}
         <nav className="hidden md:flex space-x-6 text-lg">
-          <a href="#" className="hover:text-yellow-600">Hàng Mới <span className="text-red-500">HOT</span></a>
+          <a href="#" className="hover:text-yellow-600">Hàng Mới</a>
           <a href="#" className="hover:text-yellow-600">Áo</a>
           <a href="#" className="hover:text-yellow-600">Quần</a>
           <a href="#" className="hover:text-yellow-600">Phụ Kiện</a>
@@ -33,7 +37,7 @@ const Header: React.FC = () => {
             className="w-full px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:border-yellow-600"
           />
           <button className="absolute right-2 top-1/2 transform -translate-y-1/2">
-          <span className="material-symbols-outlined">search</span>
+            <span className="material-symbols-outlined">search</span>
           </button>
         </div>
 
@@ -43,10 +47,10 @@ const Header: React.FC = () => {
             <span className="material-symbols-outlined">favorite</span>
           </a>
           <a href="#" className="hover:text-yellow-600">
-          <span className="material-symbols-outlined">person</span>
+            <span className="material-symbols-outlined">person</span>
           </a>
           <a href="#" className="hover:text-yellow-600">
-          <span className="material-symbols-outlined">local_mall</span>
+            <span className="material-symbols-outlined">local_mall</span>
           </a>
         </div>
       </div>

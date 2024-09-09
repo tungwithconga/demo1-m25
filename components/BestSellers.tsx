@@ -10,11 +10,18 @@ const BestSellers: React.FC = () => {
 
   return (
     <section className="my-10 px-8">
-      <h2 className="text-center text-2xl font-bold mb-8">Bán chạy nhất</h2>
-      <div className="grid grid-cols-4 gap-6">
+      <h2 className="text-center text-2xl font-bold mb-8">Best Seller</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {products.map((product) => (
-          <div key={product.name} className="text-center">
-            <img src={product.image} alt={product.name} className="w-full h-[300px] object-cover" />
+          <div
+            key={product.name}
+            className="text-center p-4 bg-white shadow-lg rounded-lg transition-transform duration-300 hover:scale-105"
+          >
+            <img
+              src={product.image}
+              alt={product.name}
+              className="w-full h-[300px] object-cover rounded-md"
+            />
             <h4 className="mt-4 text-lg font-semibold">{product.name}</h4>
             <p className="text-lg text-gray-700">{product.price}</p>
           </div>

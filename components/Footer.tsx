@@ -4,10 +4,14 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-900 text-white py-10">
       <div className="border-t border-gray-700 mb-10"></div>
-      <div className="container mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="container mx-auto px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* Cột 1: Logo và Thông tin công ty */}
         <div>
-          <img src="https://owen.cdn.vccloud.vn/static/version1725854603/frontend/Owen/owen2021/vi_VN/images/logo-footer.svg" alt="Owen Logo" className="h-10 mb-4" />
+          <img
+            src="https://owen.cdn.vccloud.vn/static/version1725854603/frontend/Owen/owen2021/vi_VN/images/logo-footer.svg"
+            alt="Owen Logo"
+            className="h-10 mb-4"
+          />
           <p className="text-gray-400">CÔNG TY CỔ PHẦN THỜI TRANG KOWIL VIỆT NAM</p>
           <p className="mt-2 text-gray-400">
             Hotline: <a href="tel:19008079" className="font-bold text-yellow-500">1900 8079</a>
@@ -48,29 +52,39 @@ const Footer: React.FC = () => {
           <h3 className="font-bold text-white mb-4">KẾT NỐI</h3>
           <div className="flex space-x-4 mb-6">
             <a href="#" className="hover:text-yellow-500">
-            <i className="fa-brands fa-square-facebook"></i>
+              <i className="fa-brands fa-square-facebook"></i>
             </a>
             <a href="#" className="hover:text-yellow-500">
-            <i className="fa-brands fa-instagram"></i>
+              <i className="fa-brands fa-instagram"></i>
             </a>
             <a href="#" className="hover:text-yellow-500">
-            <i className="fa-brands fa-youtube"></i>
+              <i className="fa-brands fa-youtube"></i>
             </a>
           </div>
 
           <h3 className="font-bold text-white mb-4">PHƯƠNG THỨC THANH TOÁN</h3>
           <div className="flex space-x-4">
-            <img src="https://owen.cdn.vccloud.vn/static/version1725854603/frontend/Owen/owen2021/vi_VN/images/pay.png" alt="Visa" className="h-8" />
-            <img src="https://owen.cdn.vccloud.vn/static/version1725854603/frontend/Owen/owen2021/vi_VN/images/pay.png" alt="MasterCard" className="h-8" />
-            <img src="https://owen.cdn.vccloud.vn/static/version1725854603/frontend/Owen/owen2021/vi_VN/images/pay.png" alt="Internet Banking" className="h-8" />
+            <img
+              src="https://owen.cdn.vccloud.vn/static/version1725854603/frontend/Owen/owen2021/vi_VN/images/pay.png"
+              alt="Visa"
+              className="h-8"
+            />
+            <img
+              src="https://owen.cdn.vccloud.vn/static/version1725854603/frontend/Owen/owen2021/vi_VN/images/pay.png"
+              alt="MasterCard"
+              className="h-8"
+            />
+            <img
+              src="https://owen.cdn.vccloud.vn/static/version1725854603/frontend/Owen/owen2021/vi_VN/images/pay.png"
+              alt="Internet Banking"
+              className="h-8"
+            />
           </div>
         </div>
       </div>
-
-      {/* Biểu tượng Zalo */}
       <div className="fixed bottom-4 right-4">
         <a href="#" className="hover:opacity-75">
-          <img src="/path-to-zalo-icon.png" alt="Zalo" className="h-12" />
+          <img src="https://owen.cdn.vccloud.vn/media/wysiwyg/favpng_app-store-apple-google-play.png" alt="Zalo" className="h-12" />
         </a>
       </div>
     </footer>
