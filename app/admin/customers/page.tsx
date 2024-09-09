@@ -1,5 +1,5 @@
 // app/admin/customers.tsx
-import Layout from '../layout';
+
 
 const Customers = () => {
   const customers = [
